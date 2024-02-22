@@ -1,7 +1,6 @@
 import React from 'react';
 import {Menu, Icon} from 'semantic-ui-react';
 import {Link, useLocation} from 'react-router-dom';   
-import { useAuth } from '../../../hooks';
 import './SideMenu.scss';
 
 export const SideMenu = (props) => {

@@ -9,7 +9,6 @@ import {toast} from 'react-toastify';
 //importaciones para la comunicacion con el backend
 import {loginApi} from '../../../api/user';
 /*importaciones para el manejo provider (el contexto de nuestra aplicacion)*/
-import {useAuth} from '../../../hooks';
 
 export const LoginForm = () => {
    /* console.log(useAuth()); */

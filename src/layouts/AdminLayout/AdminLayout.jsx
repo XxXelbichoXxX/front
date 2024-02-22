@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import { LoginAdmin } from '../../pages/Admin';
 import './AdminLayout.scss';
 import { TopMenu, SideMenu } from '../../components/Admin';
-import { useAuth } from '../../hooks';
+/* import { useAuth } from '../../hooks'; */
 
 export const AdminLayout = (props) => {
     const { children } = props;
-    const { auth } = useAuth();
+/*     const { auth } = useAuth(); */
     //estado para el menu lateral desplegable
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(true);
     //funcion para abrir y cerrar el menu

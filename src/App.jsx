@@ -4,12 +4,10 @@ import {ToastContainer} from 'react-toastify'
 import {Navigation} from './routes'
 import './App.scss'
 import {ClientLayout} from './layouts'
-import { AuthProvider } from './context';
 
 export const App = () => {
   return (
     <>
-    <AuthProvider>
         <Navigation />
         {/* es para los mensajes de alerta pequeños */}
         <ToastContainer
@@ -24,7 +22,6 @@ export const App = () => {
           pauseOnHover
           //theme="colored"
         />
-      </AuthProvider>
     </>
   )
 }

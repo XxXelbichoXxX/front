@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import { getMeApi, getUsersApi, addUserApi } from '../api/user';
-import { useAuth } from './useAuth';
 export function useUser() {
     const {auth} = useAuth();
     const [loading, setLoading] = useState(true);

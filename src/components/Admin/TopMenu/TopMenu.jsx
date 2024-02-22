@@ -1,19 +1,19 @@
 import React from 'react';
 import { Icon, Menu } from 'semantic-ui-react';
 import './TopMenu.scss';
-import { useAuth } from '../../../hooks';
+
 
 export const TopMenu = (props) => {
     const { toggleMenu , isOpen} = props;
-    const { auth, logouth } = useAuth();
+/*     const { auth, logouth } = useAuth(); */
 
     // Renderiza el nombre del usuario en el menú
-    const renderName = () => {
+/*     const renderName = () => {
         if (auth.me?.first_name && auth.me?.last_name) {
             return `${auth.me.first_name} ${auth.me.last_name}`;
         }
         return auth.me?.email;
-    };
+    }; */
 
     return (
         <Menu fixed='top' className='top-menu-admin'>           
@@ -25,7 +25,7 @@ export const TopMenu = (props) => {
             </Menu.Item>
 
             <Menu.Menu position='right'>
-                <Menu.Item> <Icon name='user' className='left-margin' />{renderName()}</Menu.Item>
+                <Menu.Item> <Icon name='user' className='left-margin' />{/* renderName() */}</Menu.Item>
                 <Menu.Item onClick={logouth}>
                     <Icon name='sign-out'/>
                 </Menu.Item>
